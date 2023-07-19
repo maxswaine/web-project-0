@@ -1,36 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Max Swaine Portfolio</title>
-    <link rel="stylesheet" href="main.scss">
-</head>
-<body>
-    <nav>
-        <h1>Max Swaine</h1>
-        <div class="nav__tabs">
-            <img class="nav__image" src="./images/open-menu.png" alt="menu-burger icons">
-            <a class="nav__tabs">Home</a>
-            <a class="nav__tabs">About</a>
-            <a class="nav__tabs">Projects</a>
-            <a class="nav__tabs--right--button">Get in Touch</a>
-        </div>
+    <link rel="stylesheet" href="main.scss" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__logo">Max Swaine</h1>
+      <div class="nav__tabs">
+        <img
+          class="nav__icon"
+          src="./images/open-menu.png"
+          alt="menu-burger icons"
+        />
+        <a class="nav__button" href="#">Home</a>
+        <a class="nav__button" href="#">About</a>
+        <a class="nav__button" href="#">Projects</a>
+        <a class="nav__button nav__button--right">Get in Touch</a>
+      </div>
     </nav>
     <main>
-        <section class="intro">
-            <h2 class="intro__title">Hey! I'm Max Swaine</h2>
-            <h3 class="intro__description">A Junior Software Developer based in the UK</h3>
-            <button class="intro__button">Take a look at my work ↯</button>
+      <section class="intro">
+        <h2 class="intro__title">Hey! I'm Max Swaine</h2>
+        <h3 class="intro__subtitle">
+          A Junior Software Developer based in the UK
+        </h3>
+        <button class="intro__button">Take a look at my work ↯</button>
+      </section>
 
+      <section class="skills">
+        <h2 class="skills__title">Technical Skills</h2>
+        <img class="skills__image" src="images/Skill=Git.png" alt="git icon" />
+        <img
+          class="skills__image"
+          src="images/Skill=HTML5.png"
+          alt="html icon"
+        />
+        <img class="skills__image" src="images/Skill=CSS3.png" alt="css icon" />
+        <img
+          class="skills__image"
+          src="images/Skill=JavaScript.png"
+          alt="javascript icon"
+        />
+        <img
+          class="skills__image"
+          src="images/Skill=SCSS.png"
+          alt="scss icon"
+        />
+        <img class="skills__image" src="images/Skill=BEM.png" alt="BEM icon" />
+        <img
+          class="skills__image"
+          src="images/Skill=React.png"
+          alt="react icon"
+        />
+        <img
+          class="skills__image"
+          src="images/Skill=Java.png"
+          alt="java icon"
+        />
+        <img
+          class="skills__image"
+          src="images/Skill=Spring Boot.png"
+          alt="spring boot icon"
+        />
+      </section>
 
+      <section class="projects">
+        <h2 class="projects__title">My Projects</h2>
+        <div class="grid-container">
+          <img
+            class="grid-item projects__image--project-card"
+            src="./images/Project Card.png"
+            alt="Project Card"
+          />
+          <img
+            class="grid-item projects__image--project-card"
+            src="./images/Project Card.png"
+            alt="Project Card"
+          />
+          <img
+            class="grid-item projects__image--project-card"
+            src="./images/Project Card.png"
+            alt="Project Card"
+          />
+          <img
+            class="grid-item projects__image--project-card"
+            src="./images/Project Card.png"
+            alt="Project Card"
+          />
+          <img
+            class="grid-item projects__image--project-card"
+            src="./images/Project Card.png"
+            alt="Project Card"
+          />
+          <img
+            class="grid-item projects__image--project-card"
+            src="./images/Project Card.png"
+            alt="Project Card"
+          />
+        </div>
+      </section>
 
-        </section>
-
-
-
-
+      <section class="about">
+        <h2 class="about__title">About me</h2>
+        <p class="about__description">
+          Sit laborum culpa voluptate pariatur ea tempor aute ipsum sint nulla
+          nostrud quis. Irure nulla consectetur deserunt eiusmod Lorem aute duis
+          dolore cupidatat. Fugiat tempor nulla laborum sit. Do culpa nulla
+          dolore cupidatat anim consequat. Esse anim laborum aliqua excepteur
+          proident nostrud laborum excepteur Lorem in mollit. Tempor eu nostrud
+          velit mollit cillum veniam irure adipisicing nulla irure nostrud
+          cillum.
+        </p>
+      </section>
     </main>
-    
-</body>
+
+    <footer class="footer">
+    </footer>
+  </body>
 </html>
