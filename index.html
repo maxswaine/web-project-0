@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Max Swaine Portfolio</title>
-    <link rel="stylesheet" href="main.scss" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <nav class="nav">
@@ -18,50 +18,65 @@
         <a class="nav__button" href="#">Home</a>
         <a class="nav__button" href="#">About</a>
         <a class="nav__button" href="#">Projects</a>
-        <a class="nav__button nav__button--right">Get in Touch</a>
+        <a class="nav__button nav__button--right" href="#">Get in Touch</a>
       </div>
     </nav>
     <main>
       <section class="intro">
         <h2 class="intro__title">Hey! I'm Max Swaine</h2>
         <h3 class="intro__subtitle">
-          A Junior Software Developer based in the UK
+          A Junior <span>Software Developer</span> based in the UK
         </h3>
         <button class="intro__button">Take a look at my work ↯</button>
       </section>
 
       <section class="skills">
         <h2 class="skills__title">Technical Skills</h2>
-        <img class="skills__image" src="images/Skill=Git.png" alt="git icon" />
+      </section>
+
+      <section class="skills-grid">
         <img
-          class="skills__image"
+          class="skills-grid__image"
+          src="images/Skill=Git.png"
+          alt="git icon"
+        />
+        <img
+          class="skills-grid__image"
           src="images/Skill=HTML5.png"
           alt="html icon"
         />
-        <img class="skills__image" src="images/Skill=CSS3.png" alt="css icon" />
         <img
-          class="skills__image"
+          class="skills-grid__image"
+          src="images/Skill=CSS3.png"
+          alt="css icon"
+        />
+        <img
+          class="skills-grid__image"
           src="images/Skill=JavaScript.png"
           alt="javascript icon"
         />
         <img
-          class="skills__image"
+          class="skills-grid__image"
           src="images/Skill=SCSS.png"
           alt="scss icon"
         />
-        <img class="skills__image" src="images/Skill=BEM.png" alt="BEM icon" />
         <img
-          class="skills__image"
+          class="skills-grid__image"
+          src="images/Skill=BEM.png"
+          alt="BEM icon"
+        />
+        <img
+          class="skills-grid__image"
           src="images/Skill=React.png"
           alt="react icon"
         />
         <img
-          class="skills__image"
+          class="skills-grid__image"
           src="images/Skill=Java.png"
           alt="java icon"
         />
         <img
-          class="skills__image"
+          class="skills-grid__image"
           src="images/Skill=Spring Boot.png"
           alt="spring boot icon"
         />
@@ -117,7 +132,6 @@
       </section>
     </main>
 
-    <footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>

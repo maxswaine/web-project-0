@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    &__title{
+        font-size: 0.75rem;
+    }
+    &__subtitle{
+        font-size: 3.5rem;
+        font-family: $title-font;
+        span{
+            background-image: linear-gradient($rgba-color, $rgba-color);
+            background-position: bottom;
+            background-repeat: repeat-x;
+            background-size: 100% 22px;
+
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+}

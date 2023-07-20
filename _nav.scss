@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.25rem;
+    align-items: center;
+    height: 5rem;
+    max-width: 100%;
+    &__logo{
+        font-family: $title-font, Arial, Helvetica, sans-serif;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__tabs {
+        .nav__icon{
+            height: 3rem;
+            width: 3rem;
+        }
+      .nav__button {
+        display: none;
+        font-size: 0;
+      }
+    }
+  }
+  
