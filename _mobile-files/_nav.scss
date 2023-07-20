@@ -11,11 +11,12 @@
         font-family: $title-font, Arial, Helvetica, sans-serif;
         justify-content: flex-start;
         align-items: center;
+        font-size: 1rem;
     }
     &__tabs {
         .nav__icon{
-            height: 3rem;
-            width: 3rem;
+            height: 2rem;
+            width: 2rem;
         }
       .nav__button {
         display: none;

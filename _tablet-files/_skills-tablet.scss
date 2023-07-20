@@ -1,0 +1,9 @@
+@use "./variables-tablet" as *;
+
+@media screen and (min-width: 768px) {
+.skills-grid{
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 0;
+}
+}

@@ -1,0 +1,29 @@
+@use "./variables-tablet" as *;
+
+@media screen and (min-width: 768px) {
+  .about {
+    .about__title {
+        
+      margin-top: 5rem;
+      background-image: linear-gradient(to right, $color-red, $color-red);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100% 0.8rem; /* Adjust the 3px to your desired thickness of the underline */
+      background-origin: content-box;
+      color: white;
+      display: inline-block;
+    }
+    .about__area {
+      flex-direction: row;
+    }
+
+    &__description {
+      padding: 30px;
+    }
+
+    img {
+      width: 30%;
+      margin: 40px;
+    }
+  }
+}
