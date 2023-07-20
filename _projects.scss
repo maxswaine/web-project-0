@@ -1,5 +1,30 @@
-.projects__image--project-card{
+@use "./variables" as *;
 
-    max-width: 50%;
-    height: auto;
-}
+
+.projects {
+  &__title {
+    padding: 20px;
+    font-family: $title-font Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px;
+  }
+
+  .grid-container {
+    .grid-item {
+      &:nth-last-child(-n + #{$items-to-show}) {
+        display: none;
+      }
+      width: 90%;
+      justify-self: center;
+      align-self: center;
+      border-radius: 5px;
+    }
+  }
