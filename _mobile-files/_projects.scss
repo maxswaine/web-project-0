@@ -1,6 +1,5 @@
 @use "./variables" as *;
 
-
 .projects {
   max-width: 100%;
 
@@ -12,23 +11,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-      }
   }
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 50px;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px;
+}
 
-  .grid-container {
-    .grid-item {
-      &:nth-last-child(-n + #{$items-to-show}) {
-        display: none;
-      }
-      width: 90%;
-      justify-self: center;
-      align-self: center;
-      border-radius: 5px;
+.grid-container {
+  .grid-item {
+    &:nth-last-child(-n + #{$items-to-show}) {
+      display: none;
     }
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
   }
+}
