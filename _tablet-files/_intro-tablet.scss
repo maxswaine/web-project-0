@@ -1,17 +1,40 @@
 @use "./variables-tablet" as *;
 
 @media screen and (min-width: 768px) {
+  .intro {
+    margin: 4rem;
 
-    .intro{
-        margin: 5rem;
-
-        &__title{
-            font-size: 2rem;
-        }
-
-        &__subtitle{
-            margin: 3rem;
-        }
+    &__title {
+      font-size: 2rem;
     }
 
+    &__area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--subtitle {
+        font-size: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    &__area {
+      display: flex;
+      justify-content: space-evenly;
+
+      &--image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 10rem;
+      }
+    }
+  }
 }

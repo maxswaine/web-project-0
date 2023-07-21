@@ -8,30 +8,46 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <script src="script.js"></script>
     <nav class="nav">
       <h1 class="nav__logo">Max Swaine</h1>
       <div class="nav__tabs">
-        <img
-          class="nav__icon"
-          src="./images/hamburger-menu-svgrepo-com.svg"
-          alt="menu-burger icons"
-        />
-        <a class="nav__button" href="#">Home</a>
-        <a class="nav__button" href="#">About</a>
-        <a class="nav__button" href="#">Projects</a>
-        <img
-          class="nav__button nav__button--button-right"
-          src="./images/Frame 1.svg"
-          alt="Get in touch button"
-        />
+        <div class="nav__dropdown">
+          <img
+            class="nav__icon"
+            src="./images/hamburger-menu-svgrepo-com.svg"
+            alt="menu-burger icons"
+            onclick="dropdownFunction()"
+          />
+          <div id="dropdownList" class="nav__dropdown--items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+          </div>
+          <a class="nav__button" href="#">Home</a>
+          <a class="nav__button" href="#">About</a>
+          <a class="nav__button" href="#">Projects</a>
+          <img
+            class="nav__button nav__button--button-right"
+            src="./images/Frame 1.svg"
+            alt="Get in touch button"
+          />
+        </div>
       </div>
     </nav>
     <main>
       <section class="intro">
         <h2 class="intro__title">Hey! I'm Max Swaine</h2>
-        <h3 class="intro__subtitle">
-          A Junior <span>Software Developer</span> based in the UK
-        </h3>
+        <div class="intro__area">
+          <h3 class="intro__area--subtitle">
+            A Junior <span>Software Developer</span> based in the UK
+          </h3>
+          <img
+            class="intro__area--image"
+            src="./images/69965642199__EA07BFAC-9747-4AC6-B66A-6B96D0C7A81D.jpeg"
+            alt="pic of me"
+          />
+        </div>
         <button class="intro__button" onclick="scrollToProjects()">
           Take a look at my work ↯
         </button>
@@ -89,7 +105,7 @@
         />
       </section>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2 class="projects__title">My Projects</h2>
         <div class="grid-container">
           <img
@@ -146,10 +162,11 @@
             deserunt excepteur adipisicing.
           </p>
           <img
-            class="about__image"
+            class="about__image--self"
             src="./images/69965642199__EA07BFAC-9747-4AC6-B66A-6B96D0C7A81D.jpeg"
             alt="pic of me"
           />
+          <img class="about__image--cartoon" src="./images/Saly-13.svg" />
         </div>
       </section>
     </main>

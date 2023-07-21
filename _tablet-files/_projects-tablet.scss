@@ -1,12 +1,14 @@
 @use "./variables-tablet" as *;
 
 @media screen and (min-width: 768px) {
-
-    .grid-container {
-        .grid-item {
-          &:nth-last-child(-n + #{$items-to-show}) {
-            display: flex;
-          }
-        }
-}
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    .grid-item {
+      &:nth-last-child(-n + #{$items-to-show}) {
+        display: flex;
+      }
+    }
+  }
 }

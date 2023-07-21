@@ -2,14 +2,24 @@
 
 .about {
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  max-width: 100%;
   .about__title {
     font-size: 2rem;
     padding: 15px;
     margin-top: 20px;
     font-family: $title-font Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: linear-gradient(to right, $blue-opacity, $blue-opacity);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 0.8rem; /* Adjust the 3px to your desired thickness of the underline */
+    background-origin: content-box;
+    color: white;
+    display: inline-block;
   }
 
   .about__area {
@@ -17,6 +27,14 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+
+    .about__image--self {
+      width: 50%;
+      height: auto;
+    }
+    .about__image--cartoon {
+      display: none;
+    }
   }
   .about__description {
     font-family: $main-font, Arial, Helvetica, sans-serif;
@@ -25,7 +43,7 @@
     width: 50;
   }
   img {
-    width: 70%;
+    width: 50%;
     height: auto;
   }
 }

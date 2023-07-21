@@ -3,27 +3,41 @@
 @media screen and (min-width: 768px) {
   .about {
     .about__title {
-        
       margin-top: 5rem;
-      background-image: linear-gradient(to right, $color-red, $color-red);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 100% 0.8rem; /* Adjust the 3px to your desired thickness of the underline */
-      background-origin: content-box;
-      color: white;
-      display: inline-block;
     }
     .about__area {
       flex-direction: row;
+
+      .about__description {
+        font-size: 1rem;
+      }
+
+      .about__image--self {
+        width: 30%;
+        margin: 40px;
+      }
     }
 
     &__description {
       padding: 30px;
     }
+  }
+}
 
-    img {
-      width: 30%;
-      margin: 40px;
+@media screen and (min-width: 1024px) {
+  .about {
+    .about__area {
+      .about__description {
+        font-size: 1.5rem;
+      }
+      .about__image--self {
+        display: none;
+      }
+      .about__image--cartoon {
+        display: flex;
+        width: 30%;
+        margin: 40px;
+      }
     }
   }
 }

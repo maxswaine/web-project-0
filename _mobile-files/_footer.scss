@@ -1,33 +1,29 @@
 @use "./variables" as *;
 
-
 .footer {
-    background-color: $item-color;
+  background-color: $item-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+
+  .footer__images {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 100%;
-
-  
-    .footer__images {
-      display: flex; 
-      justify-content: center; 
-      margin-bottom: 10px; 
-    }
-  
-    .footer__image--logo {
-      width: 50px;
-      background-color: $item-color;
-
-    }
-  
-    .footer__text {
-        background-color: $item-color;
-      font-size: 14px;
-      color: #24305E;
-      font-family: $main-font, Arial, Helvetica, sans-serif;
-    }
+    justify-content: center;
+    margin-bottom: 10px;
   }
-  
-  
+
+  .footer__image--logo {
+    width: 50px;
+    background-color: $item-color;
+    margin: 0;
+  }
+
+  .footer__text {
+    background-color: $item-color;
+    font-size: 14px;
+    color: #24305e;
+    font-family: $main-font, Arial, Helvetica, sans-serif;
+  }
+}

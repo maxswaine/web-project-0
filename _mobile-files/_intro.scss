@@ -7,31 +7,38 @@
   align-items: center;
   max-width: 100%;
   &__title {
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: $main-font;
     font-style: bold;
-  }
-  &__subtitle {
-    margin: 1.5rem;
-    font-size: 3rem;
-    font-family: $title-font;
-    span {
-      background-image: linear-gradient($rgba-color, $rgba-color);
-      background-position: bottom;
-      background-repeat: repeat-x;
-      background-size: 100% 1.2rem;
-    }
   }
   &__button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 15rem;
     height: 3rem;
     border: $color-red 2px solid;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
     margin: 30px 0px;
+  }
+
+  &__area {
+    &--subtitle {
+      margin: 1.5rem;
+      font-size: 3rem;
+      font-family: $title-font;
+      span {
+        background-image: linear-gradient($rgba-color, $rgba-color);
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: 100% 1.2rem;
+        margin: 0;
+      }
+    }
+    &--image {
+      display: none;
+    }
   }
 }
