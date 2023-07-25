@@ -1,7 +1,6 @@
 @use "./variables" as *;
 
 .footer {
-  // Footer styles
   background-color: $item-color;
   display: flex;
   flex-direction: column;
@@ -27,5 +26,20 @@
     font-size: 1rem;
     color: #24305e;
     font-family: $main-font, Arial, Helvetica, sans-serif;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    &__text {
+      font-size: 1.5rem;
+    }
+
+    &__image--logo {
+      width: auto;
+    }
   }
 }

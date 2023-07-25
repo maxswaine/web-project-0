@@ -1,4 +1,8 @@
-@use "./_mobile-files/index";
-@use "./_tablet-files/index-tablet"
-
-
+@use "./about";
+@use "./body";
+@use "./footer";
+@use "./intro";
+@use "./nav";
+@use "./projects";
+@use "./skills";
+@use "./variables";
