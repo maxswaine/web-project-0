@@ -18,11 +18,12 @@
     width: 50px;
     background-color: $item-color;
     margin: 0;
+    cursor: pointer;
   }
 
   .footer__text {
     background-color: $item-color;
-    font-size: 14px;
+    font-size: 1rem;
     color: #24305e;
     font-family: $main-font, Arial, Helvetica, sans-serif;
   }

@@ -38,12 +38,13 @@
 .about .about__description {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: 20px;
-  width: 50;
+  margin-top: 30px;
+  width: 90%;
 }
 .about img {
   width: 50%;
   height: auto;
+  border-radius: 20px;
 }
 
 * {
@@ -77,10 +78,11 @@
   width: 50px;
   background-color: #f8e9a1;
   margin: 0;
+  cursor: pointer;
 }
 .footer .footer__text {
   background-color: #f8e9a1;
-  font-size: 14px;
+  font-size: 1rem;
   color: #24305e;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
@@ -101,12 +103,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
   width: 15rem;
   height: 3rem;
   border: #f76c6c 2px solid;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  transition: opacity 0.3s ease;
   margin: 30px 0px;
 }
 .intro__area--subtitle {
@@ -123,6 +126,7 @@
 }
 .intro__area--image {
   display: none;
+  border-radius: 5px;
 }
 
 .nav {
@@ -140,8 +144,8 @@
   font-size: 1rem;
 }
 .nav__tabs .nav__icon {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 .nav__tabs .nav__button {
   display: none;
@@ -235,7 +239,7 @@
     flex-direction: row;
   }
   .about .about__area .about__description {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .about .about__area .about__image--self {
     width: 30%;
@@ -293,7 +297,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 10rem;
+    width: 15rem;
   }
 }
 @media screen and (min-width: 768px) {

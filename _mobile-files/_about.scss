@@ -39,11 +39,12 @@
   .about__description {
     font-family: $main-font, Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    margin: 20px;
-    width: 50;
+    margin-top: 30px;
+    width: 90%;
   }
   img {
     width: 50%;
     height: auto;
+    border-radius: 20px;
   }
 }
