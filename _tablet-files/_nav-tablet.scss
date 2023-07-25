@@ -16,16 +16,46 @@
       }
       .nav__button {
         display: flex;
+        justify-content: space-around;
         align-items: flex-end;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: white;
-        width: 50%;
+        width: auto;
         text-decoration: none;
         font-family: $main-font, Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(
+          to right,
+          $blue-opacity,
+          $blue-opacity
+        );
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: auto 0.2rem;
+        background-origin: content-box;
+        color: white;
+        display: inline-block;
+
         &--button-right {
           margin-left: 10px;
-          height: 30px;
-          width: auto;
+          height: 2rem;
+          background-size: 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    height: 7rem;
+    &__logo {
+      font-size: 2rem;
+    }
+    &__tabs {
+      .nav__button {
+        font-size: 2rem;
+        &--button-right {
+          height: 2.5rem;
         }
       }
     }

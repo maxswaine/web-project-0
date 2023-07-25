@@ -24,17 +24,31 @@
 
 @media screen and (min-width: 1024px) {
   .intro {
+    &__title {
+      font-size: 2.5rem;
+    }
     &__area {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
+      padding: 50px;
+
+      &--subtitle {
+        font-size: 3.5rem;
+      }
 
       &--image {
         display: flex;
         justify-content: center;
         align-items: center;
         height: auto;
-        width: 15rem;
+        width: 40%;
       }
+    }
+
+    &__button {
+      font-size: 1.5rem;
+      width: 20rem;
+      height: 5rem;
     }
   }
 }

@@ -1,9 +1,16 @@
 @use "./variables-tablet" as *;
 
 @media screen and (min-width: 768px) {
-    .footer{
-        flex-direction: row-reverse;
-        justify-content: space-around;
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-around;
 
+    &__text {
+      font-size: 1.5rem;
     }
+
+    &__image--logo {
+      width: auto;
+    }
+  }
 }

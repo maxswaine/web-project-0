@@ -20,8 +20,7 @@
     height: 3rem;
     border: $color-red 2px solid;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px lightgray;
-    transition: opacity 0.3s ease;
+    box-shadow: 2px 2px 2px 2px $color-red;
     margin: 30px 0px;
   }
 
@@ -34,13 +33,13 @@
         background-image: linear-gradient($rgba-color, $rgba-color);
         background-position: bottom;
         background-repeat: repeat-x;
-        background-size: 100% 1.2rem;
+        background-size: 100% 1rem;
         margin: 0;
       }
     }
     &--image {
       display: none;
-      border-radius: 5px;
+      border-radius: 25px;
     }
   }
 }

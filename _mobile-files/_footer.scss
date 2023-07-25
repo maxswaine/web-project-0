@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 .footer {
+  // Footer styles
   background-color: $item-color;
   display: flex;
   flex-direction: column;
@@ -8,20 +9,20 @@
   padding: 20px;
   width: 100%;
 
-  .footer__images {
+  &__images {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
   }
 
-  .footer__image--logo {
+  &__image--logo {
     width: 50px;
     background-color: $item-color;
     margin: 0;
     cursor: pointer;
   }
 
-  .footer__text {
+  &__text {
     background-color: $item-color;
     font-size: 1rem;
     color: #24305e;

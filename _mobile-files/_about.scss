@@ -8,7 +8,7 @@
   align-items: center;
   margin: 1rem;
   max-width: 100%;
-  .about__title {
+  &__title {
     font-size: 2rem;
     padding: 15px;
     margin-top: 20px;
@@ -22,7 +22,7 @@
     display: inline-block;
   }
 
-  .about__area {
+  &__area {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -36,10 +36,11 @@
       display: none;
     }
   }
-  .about__description {
+
+  &__description {
     font-family: $main-font, Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    margin-top: 30px;
+    color: $color-blue;
     width: 90%;
   }
   img {

@@ -1,9 +1,26 @@
 @use "./variables-tablet" as *;
 
 @media screen and (min-width: 768px) {
-.skills-grid{
-    margin-left: 10px;
-    margin-right: 10px;
-    gap: 0;
+  .skills {
+    &__title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .skills-grid {
+      margin: 0px 10px 10px 0;
+      gap: 0;
+    }
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  .skills-grid {
+    justify-content: space-evenly;
+    margin: 60px 60px 20px 60px;
+
+    .skills__image {
+      width: 7%;
+      height: auto;
+    }
+  }
 }

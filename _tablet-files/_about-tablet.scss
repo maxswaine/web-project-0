@@ -2,15 +2,13 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    .about__title {
+    &__title {
       margin-top: 5rem;
+      font-size: 2rem;
     }
+
     .about__area {
       flex-direction: row;
-
-      .about__description {
-        font-size: 1.5rem;
-      }
 
       .about__image--self {
         width: 30%;
@@ -27,17 +25,28 @@
 @media screen and (min-width: 1024px) {
   .about {
     .about__area {
-      .about__description {
-        font-size: 1.5rem;
-      }
       .about__image--self {
         display: none;
       }
       .about__image--cartoon {
         display: flex;
-        width: 30%;
+        width: 35%;
         margin: 40px;
       }
+    }
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    &__description {
+      font-size: 1.5rem;
+    }
+    &__title {
+      font-size: 3rem;
     }
   }
 }
