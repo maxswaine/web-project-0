@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 1em;
   max-width: 100%;
 
   &__title {
-    font-size: 2rem;
+    font-size: 2em;
     padding: 15px;
     margin-top: 20px;
     font-family: $title-font, Arial, Helvetica, sans-serif;
@@ -19,7 +19,7 @@
     background-image: linear-gradient(to right, $blue-opacity, $blue-opacity);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100% 0.8rem; /* Adjust the 3px to your desired thickness of the underline */
+    background-size: 100% 0.4em;
     background-origin: content-box;
     color: white;
     display: inline-block;
@@ -43,7 +43,7 @@
 
   @media screen and (min-width: 768px) {
     &__title {
-      font-size: 2rem;
+      font-size: 2em;
       margin-bottom: 30px;
     }
 

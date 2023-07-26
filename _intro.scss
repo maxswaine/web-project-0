@@ -36,7 +36,7 @@
         background-image: linear-gradient($rgba-color, $rgba-color);
         background-position: bottom;
         background-repeat: repeat-x;
-        background-size: 100% 1rem;
+        background-size: 100% 0.4em;
         margin: 0;
       }
     }
@@ -64,7 +64,7 @@
       &--subtitle {
         font-size: 2em;
         text-align: center;
-        margin: 2em 0 2em 0;
+        margin: 2em 0 2.2em 0;
       }
     }
     &__button {
