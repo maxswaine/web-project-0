@@ -370,7 +370,7 @@
   background-image: linear-gradient(to right, rgba(39, 38, 67, 0.7), rgba(39, 38, 67, 0.7));
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% 0.4em; /* Adjust the 3px to your desired thickness of the underline */
+  background-size: 100% 0.4em;
   background-origin: content-box;
   color: white;
   display: inline-block;
